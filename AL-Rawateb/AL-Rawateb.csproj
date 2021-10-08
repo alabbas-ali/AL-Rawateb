@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2D6AF956-6638-45CB-83A2-D4625835E686}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AL_Rawateb</RootNamespace>
+    <AssemblyName>AL-Rawateb</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\weeam\Desktop\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Card_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Card_form.Designer.cs">
+      <DependentUpon>Card_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EsalCutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EsalCutForm.Designer.cs">
+      <DependentUpon>EsalCutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HasemReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HasemReportForm.Designer.cs">
+      <DependentUpon>HasemReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HasemReportForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HasemReportForm2.Designer.cs">
+      <DependentUpon>HasemReportForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HasemShowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HasemShowForm.Designer.cs">
+      <DependentUpon>HasemShowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HasemShowForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HasemShowForm2.Designer.cs">
+      <DependentUpon>HasemShowForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master_form.Designer.cs">
+      <DependentUpon>Master_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenhaDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MenhaDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MenhaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenhaForm.Designer.cs">
+      <DependentUpon>MenhaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenhaReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenhaReportForm.Designer.cs">
+      <DependentUpon>MenhaReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Myconnection.cs" />
+    <Compile Include="NakabatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NakabatForm.Designer.cs">
+      <DependentUpon>NakabatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NakabatReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NakabatReportForm.Designer.cs">
+      <DependentUpon>NakabatReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NakabtOmalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NakabtOmalForm.Designer.cs">
+      <DependentUpon>NakabtOmalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NakabtOmalRepotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NakabtOmalRepotForm.Designer.cs">
+      <DependentUpon>NakabtOmalRepotForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options_Form.Designer.cs">
+      <DependentUpon>Options_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Card_form.resx">
+      <DependentUpon>Card_form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EsalCutForm.resx">
+      <DependentUpon>EsalCutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HasemReportForm.resx">
+      <DependentUpon>HasemReportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HasemReportForm2.resx">
+      <DependentUpon>HasemReportForm2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HasemShowForm.resx">
+      <DependentUpon>HasemShowForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HasemShowForm2.resx">
+      <DependentUpon>HasemShowForm2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master_form.resx">
+      <DependentUpon>Master_form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenhaForm.resx">
+      <DependentUpon>MenhaForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenhaReportForm.resx">
+      <DependentUpon>MenhaReportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NakabatForm.resx">
+      <DependentUpon>NakabatForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NakabatReport.rdlc" />
+    <EmbeddedResource Include="NakabatReportForm.resx">
+      <DependentUpon>NakabatReportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NakabtOmalForm.resx">
+      <DependentUpon>NakabtOmalForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NakabtOmalRepotForm.resx">
+      <DependentUpon>NakabtOmalRepotForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options_Form.resx">
+      <DependentUpon>Options_Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProsessingForm.resx">
+      <DependentUpon>ProsessingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RawatepReportForm.resx">
+      <DependentUpon>RawatepReportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RawatepShowForm.resx">
+      <DependentUpon>RawatepShowForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportHasem.rdlc" />
+    <EmbeddedResource Include="ReportHasem2.rdlc" />
+    <EmbeddedResource Include="ReportMenha.rdlc" />
+    <EmbeddedResource Include="ReportNakaptOmal.rdlc" />
+    <EmbeddedResource Include="ReportRawatep.rdlc" />
+    <EmbeddedResource Include="ReportSaraf.rdlc" />
+    <EmbeddedResource Include="ReportTawed.rdlc" />
+    <EmbeddedResource Include="ReportUpGreat.rdlc" />
+    <EmbeddedResource Include="Salary_form.resx">
+      <DependentUpon>Salary_form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SarafRawatepForm.resx">
+      <DependentUpon>SarafRawatepForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sort_form.resx">
+      <DependentUpon>Sort_form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic_form.resx">
+      <DependentUpon>Statistic_form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TawedReportForm.resx">
+      <DependentUpon>TawedReportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TawedShowForm.resx">
+      <DependentUpon>TawedShowForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upgrad_form.resx">
+      <DependentUpon>Upgrad_form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpGreatReportForm.resx">
+      <DependentUpon>UpGreatReportForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_form.resx">
+      <DependentUpon>X_form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ProsessingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProsessingForm.Designer.cs">
+      <DependentUpon>ProsessingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RawatepReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RawatepReportForm.Designer.cs">
+      <DependentUpon>RawatepReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RawatepShowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RawatepShowForm.Designer.cs">
+      <DependentUpon>RawatepShowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalaryCuting.cs" />
+    <Compile Include="SalarysDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalarysDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Salary_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salary_form.designer.cs">
+      <DependentUpon>Salary_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SarafRawatepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SarafRawatepForm.Designer.cs">
+      <DependentUpon>SarafRawatepForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sort_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sort_form.Designer.cs">
+      <DependentUpon>Sort_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistic_form.Designer.cs">
+      <DependentUpon>Statistic_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TawedReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TawedReportForm.Designer.cs">
+      <DependentUpon>TawedReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TawedShowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TawedShowForm.Designer.cs">
+      <DependentUpon>TawedShowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Upgrad_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Upgrad_form.Designer.cs">
+      <DependentUpon>Upgrad_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpGreatDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UpGreatDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UpGreatReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpGreatReportForm.Designer.cs">
+      <DependentUpon>UpGreatReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsareDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UsareDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="X_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_form.Designer.cs">
+      <DependentUpon>X_form.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BabyKeyboardBash.Icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="MenhaDS.xsc">
+      <DependentUpon>MenhaDS.xsd</DependentUpon>
+    </None>
+    <None Include="MenhaDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MenhaDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MenhaDS.xss">
+      <DependentUpon>MenhaDS.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\star.png" />
+    <None Include="SalarysDS.xsc">
+      <DependentUpon>SalarysDS.xsd</DependentUpon>
+    </None>
+    <None Include="SalarysDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SalarysDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SalarysDS.xss">
+      <DependentUpon>SalarysDS.xsd</DependentUpon>
+    </None>
+    <None Include="UpGreatDS.xsc">
+      <DependentUpon>UpGreatDS.xsd</DependentUpon>
+    </None>
+    <None Include="UpGreatDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UpGreatDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UpGreatDS.xss">
+      <DependentUpon>UpGreatDS.xsd</DependentUpon>
+    </None>
+    <None Include="UsareDS.xsc">
+      <DependentUpon>UsareDS.xsd</DependentUpon>
+    </None>
+    <None Include="UsareDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UsareDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UsareDS.xss">
+      <DependentUpon>UsareDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.9.2">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition SP2 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="rwateb.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rwateb_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>rwateb.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
